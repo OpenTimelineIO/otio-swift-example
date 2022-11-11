@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3273158291E037C0096B0E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3273157291E037C0096B0E1 /* main.swift */; };
+		C3273160291E038E0096B0E1 /* OpenTimelineIO in Frameworks */ = {isa = PBXBuildFile; productRef = C327315F291E038E0096B0E1 /* OpenTimelineIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3273160291E038E0096B0E1 /* OpenTimelineIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = "otio-swift-example";
+			packageProductDependencies = (
+				C327315F291E038E0096B0E1 /* OpenTimelineIO */,
+			);
 			productName = "otio-swift-example";
 			productReference = C3273154291E037C0096B0E1 /* otio-swift-example */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = C327314B291E037C0096B0E1;
+			packageReferences = (
+				C327315E291E038E0096B0E1 /* XCRemoteSwiftPackageReference "OpenTimelineIO-Swift-Bindings" */,
+			);
 			productRefGroup = C3273155291E037C0096B0E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,7 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83T3LQ9M77;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -255,7 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83T3LQ9M77;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C327315E291E038E0096B0E1 /* XCRemoteSwiftPackageReference "OpenTimelineIO-Swift-Bindings" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OpenTimelineIO/OpenTimelineIO-Swift-Bindings.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C327315F291E038E0096B0E1 /* OpenTimelineIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C327315E291E038E0096B0E1 /* XCRemoteSwiftPackageReference "OpenTimelineIO-Swift-Bindings" */;
+			productName = OpenTimelineIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C327314C291E037C0096B0E1 /* Project object */;
 }

@@ -1,4 +1,4 @@
-# OpenTimelineIO C++ Example
+# OpenTimelineIO Swift Example
 
 This repository serves as a minimal example of using [OpenTimelineIO](https://opentimeline.io) in a Swift application.
 
